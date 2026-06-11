@@ -2,7 +2,7 @@
 var STORY = {
 
 'prologue': {
-  scene: '序', location: '', bg: 'bg-night',
+  scene: '序', location: '', bg: 'bg-night', img: 'img_night.png',
   lines: [
     { type: 'narration', text: '你已经很多年没有梦见那间老厝了。' },
     { type: 'narration', text: '可是今晚，雨声又把你带回去了。' },
@@ -16,7 +16,7 @@ var STORY = {
 },
 
 'ch1_arrive': {
-  scene: '第一章 \u00b7 到厝', location: '潮汕某镇 \u00b7 雨天 \u00b7 下午', bg: 'bg-rain',
+  scene: '第一章 \u00b7 到厝', location: '潮汕某镇 \u00b7 雨天 \u00b7 下午', bg: 'bg-rain', img: 'img_rain.png',
   lines: [
     { type: 'narration', text: '那年你十四岁。暑假。' },
     { type: 'narration', text: '阿母讲，伲去乡下阿舅恁兜蹛几日。' },
@@ -34,7 +34,7 @@ var STORY = {
 },
 
 'ch1_ask_house': {
-  bg: 'bg-rain',
+  bg: 'bg-rain', img: 'img_rain.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '阿舅，这是啥人的厝？' },
     { type: 'dialogue', speaker: '阿舅', text: '恁阿嬷以前蹛的所在。伊过身了后，就空着。' },
@@ -45,7 +45,7 @@ var STORY = {
 },
 
 'ch1_enter': {
-  bg: 'bg-rain',
+  bg: 'bg-rain', img: 'img_rain.png',
   lines: [
     { type: 'narration', text: '门内是一个天井。' },
     { type: 'narration', text: '四角檐口的水像断了线的珠子，打在石阶上。' },
@@ -63,7 +63,7 @@ var STORY = {
 },
 
 'ch1_ask_why': {
-  bg: 'bg-rain',
+  bg: 'bg-rain', img: 'img_rain.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '做呢唔去得？' },
     { type: 'narration', text: '阿舅看了你一眼。' },
@@ -80,7 +80,7 @@ var STORY = {
 Object.assign(STORY, {
 
 'ch1_room': {
-  bg: 'bg-dusk',
+  bg: 'bg-dusk', img: 'img_alley.png',
   lines: [
     { type: 'narration', text: '右边的房间很简单。一张眠床，一张书桌，一盏灯。' },
     { type: 'narration', text: '你放下包，坐在床沿。' },
@@ -97,7 +97,7 @@ Object.assign(STORY, {
 },
 
 'ch1_window': {
-  bg: 'bg-dusk',
+  bg: 'bg-dusk', img: 'img_alley.png',
   lines: [
     { type: 'narration', text: '你走到窗前。' },
     { type: 'narration', text: '隔着天井，左边那间房的窗也开着一条缝。' },
@@ -112,7 +112,7 @@ Object.assign(STORY, {
 },
 
 'ch1_ignore': {
-  bg: 'bg-dusk',
+  bg: 'bg-dusk', img: 'img_alley.png',
   lines: [
     { type: 'narration', text: '你用被子蒙住头。告诉自己是风。' },
     { type: 'narration', text: '但那个声音又来了。' },
@@ -124,7 +124,7 @@ Object.assign(STORY, {
 },
 
 'ch1_night': {
-  bg: 'bg-night',
+  bg: 'bg-night', img: 'img_night.png',
   lines: [
     { type: 'narration', text: '半夜。你被一阵声音惊醒。' },
     { type: 'narration', text: '啪——啪——啪。' },
@@ -141,7 +141,7 @@ Object.assign(STORY, {
 },
 
 'ch1_note': {
-  bg: 'bg-night',
+  bg: 'bg-night', img: 'img_night.png',
   lines: [
     { type: 'narration', text: '你赤脚踩着冰凉的地砖，走到门前。' },
     { type: 'narration', text: '捡起那张纸。' },
@@ -155,7 +155,7 @@ Object.assign(STORY, {
 },
 
 'ch1_freeze': {
-  bg: 'bg-night',
+  bg: 'bg-night', img: 'img_night.png',
   lines: [
     { type: 'narration', text: '你一动不动地躺着。盯着门缝下面那张白色的纸。' },
     { type: 'narration', text: '一直到天亮。' },
@@ -168,7 +168,7 @@ Object.assign(STORY, {
 },
 
 'ch2_morning': {
-  scene: '第二章 \u00b7 天光', location: '天井 \u00b7 清晨', bg: 'bg-dawn',
+  scene: '第二章 \u00b7 天光', location: '天井 \u00b7 清晨', bg: 'bg-dawn', img: 'img_dawn.png',
   lines: [
     { type: 'narration', text: '你起得比所有人都早。' },
     { type: 'narration', text: '天井的地砖被露水打湿了。空气里有股潮湿的泥土味。' },
@@ -183,7 +183,7 @@ Object.assign(STORY, {
 },
 
 'ch2_well': {
-  bg: 'bg-well',
+  bg: 'bg-well', img: 'img_well.png',
   lines: [
     { type: 'narration', text: '天井角落有一口古井。' },
     { type: 'narration', text: '你打了一桶水洗脸。水很凉，你打了个激灵。' },
@@ -199,7 +199,7 @@ Object.assign(STORY, {
 },
 
 'ch2_approach': {
-  bg: 'bg-dawn',
+  bg: 'bg-dawn', img: 'img_dawn.png',
   lines: [
     { type: 'narration', text: '你走到左边那扇门前。' },
     { type: 'narration', text: '门板上的符纸比你想象中更旧。至少贴了好几年了。' },
@@ -220,7 +220,7 @@ Object.assign(STORY, {
 },
 
 'ch2_who': {
-  bg: 'bg-dawn',
+  bg: 'bg-dawn', img: 'img_dawn.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '你是啥人？' },
     { type: 'dialogue', speaker: '她', text: '我是……你表姐。' },
@@ -232,7 +232,7 @@ Object.assign(STORY, {
 },
 
 'ch2_why_locked': {
-  bg: 'bg-dawn',
+  bg: 'bg-dawn', img: 'img_dawn.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '你做呢被关在里面？' },
     { type: 'dialogue', speaker: '她', text: '……因为我不愿意。' },
@@ -244,7 +244,7 @@ Object.assign(STORY, {
 },
 
 'ch2_breakfast': {
-  bg: 'bg-noon', location: '大厅 \u00b7 早饭',
+  bg: 'bg-noon', img: 'img_threshold.png', location: '大厅 \u00b7 早饭',
   lines: [
     { type: 'narration', text: '吃早饭的时候，阿妗端了一个托盘出去。' },
     { type: 'narration', text: '上面是一碗白糜、一碟菜脯。' },
@@ -260,7 +260,7 @@ Object.assign(STORY, {
 },
 
 'ch2_town': {
-  scene: '支线 \u00b7 老市', location: '镇上 \u00b7 上午', bg: 'bg-market',
+  scene: '支线 \u00b7 老市', location: '镇上 \u00b7 上午', bg: 'bg-market', img: 'img_market.png',
   lines: [
     { type: 'narration', text: '镇上有一条老街。潮汕话叫\u201c老市\u201d。' },
     { type: 'narration', text: '街边有卖粿条、蚝烙、草粿的摊子。' },
@@ -280,7 +280,7 @@ Object.assign(STORY, {
 },
 
 'ch2_eavesdrop': {
-  bg: 'bg-market',
+  bg: 'bg-market', img: 'img_market.png',
   lines: [
     { type: 'dialogue', speaker: '阿姆甲', text: '是许厝和陈厝讲好的亲事？' },
     { type: 'dialogue', speaker: '阿姆乙', text: '是啊。彩礼都收了。' },
@@ -296,7 +296,7 @@ Object.assign(STORY, {
 },
 
 'ch2_temple': {
-  scene: '支线 \u00b7 老爷宫', location: '镇尾 \u00b7 妈祖庙', bg: 'bg-temple',
+  scene: '支线 \u00b7 老爷宫', location: '镇尾 \u00b7 妈祖庙', bg: 'bg-temple', img: 'img_temple.png',
   lines: [
     { type: 'narration', text: '镇尾有一座小庙。潮汕人叫\u201c老爷宫\u201d。' },
     { type: 'narration', text: '里面供的是妈祖。香火气很重。' },
@@ -311,7 +311,7 @@ Object.assign(STORY, {
 },
 
 'ch2_stay': {
-  bg: 'bg-noon',
+  bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'narration', text: '你说头晕，留在厝里。' },
     { type: 'narration', text: '阿舅出门了。阿妗在厨房。' },
@@ -331,7 +331,7 @@ Object.assign(STORY, {
 Object.assign(STORY, {
 
 'ch3_days': {
-  scene: '第三章 \u00b7 隔门', location: '老厝 \u00b7 日复一日', bg: 'bg-noon',
+  scene: '第三章 \u00b7 隔门', location: '老厝 \u00b7 日复一日', bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'narration', text: '接下来的日子，你们隔着那扇门说话。只能在阿舅出门时。' },
     { type: 'narration', text: '她告诉你——她叫阿琴。今年二十二。' },
@@ -346,7 +346,7 @@ Object.assign(STORY, {
 },
 
 'ch3_plan': {
-  bg: 'bg-noon',
+  bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '我帮你想办法出去。' },
     { type: 'dialogue', speaker: '阿琴', text: '你十四岁。你能做什么？' },
@@ -358,7 +358,7 @@ Object.assign(STORY, {
 },
 
 'ch3_escape': {
-  bg: 'bg-noon',
+  bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '你有没有想过……逃？' },
     { type: 'dialogue', speaker: '阿琴', text: '门从外面锁的。窗户钉死了。' },
@@ -371,7 +371,7 @@ Object.assign(STORY, {
 },
 
 'ch3_opera': {
-  scene: '支线 \u00b7 纸影戏', location: '祠堂前 \u00b7 晚上', bg: 'bg-opera',
+  scene: '支线 \u00b7 纸影戏', location: '祠堂前 \u00b7 晚上', bg: 'bg-opera', img: 'img_opera.png',
   lines: [
     { type: 'narration', text: '那天晚上，镇上做戏。纸影戏。铁枝木偶在白幕后面晃动。' },
     { type: 'narration', text: '锣鼓喧天。唱的是陈三五娘。' },
@@ -388,7 +388,7 @@ Object.assign(STORY, {
 },
 
 'ch3_tell_opera': {
-  bg: 'bg-night',
+  bg: 'bg-night', img: 'img_night.png',
   lines: [
     { type: 'narration', text: '你跑回去。蹲在她门前，小声说：' },
     { type: 'dialogue', speaker: '你', text: '外面在做纸影戏。演陈三五娘。' },
@@ -402,7 +402,7 @@ Object.assign(STORY, {
 },
 
 'ch4_well': {
-  scene: '第四章 \u00b7 古井', location: '天井 \u00b7 午后', bg: 'bg-well',
+  scene: '第四章 \u00b7 古井', location: '天井 \u00b7 午后', bg: 'bg-well', img: 'img_well.png',
   lines: [
     { type: 'narration', text: '那天下午你又去古井打水。' },
     { type: 'narration', text: '井沿上刻着：光绪十九年 许氏立。' },
@@ -422,7 +422,7 @@ Object.assign(STORY, {
 },
 
 'ch4_ask': {
-  bg: 'bg-dusk',
+  bg: 'bg-dusk', img: 'img_alley.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '我在井里发现了那些纸。' },
     { type: 'dialogue', speaker: '阿琴', text: '……那是第一年的时候写的。' },
@@ -435,7 +435,7 @@ Object.assign(STORY, {
 },
 
 'ch4_putback': {
-  bg: 'bg-well',
+  bg: 'bg-well', img: 'img_well.png',
   lines: [
     { type: 'narration', text: '你把纸放回油纸包里。塞回井壁的石缝。' },
     { type: 'narration', text: '也许这些字不是给你看的。' },
@@ -446,7 +446,7 @@ Object.assign(STORY, {
 },
 
 'ch5_letter': {
-  scene: '第五章 \u00b7 信', location: '偏房门前 \u00b7 傍晚', bg: 'bg-dusk',
+  scene: '第五章 \u00b7 信', location: '偏房门前 \u00b7 傍晚', bg: 'bg-dusk', img: 'img_alley.png',
   lines: [
     { type: 'narration', text: '你还有三天就要走了。' },
     { type: 'narration', text: '她把信从门缝下面塞出来。白色信封。什么都没有写。' },
@@ -464,7 +464,7 @@ Object.assign(STORY, {
 },
 
 'ch6_leave': {
-  scene: '第六章 \u00b7 走', location: '门厅 \u00b7 正午', bg: 'bg-noon',
+  scene: '第六章 \u00b7 走', location: '门厅 \u00b7 正午', bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'narration', text: '日头很猛。你站在大门的门槛上。' },
     { type: 'narration', text: '阿舅在外面等。客车的引擎已经发动了。' },
@@ -480,7 +480,7 @@ Object.assign(STORY, {
 },
 
 'ch6_go': {
-  bg: 'bg-noon',
+  bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'narration', text: '你跨出门槛。阳光很刺眼。你眯起了眼。' },
     { type: 'narration', text: '走过长巷。上车。' },
@@ -491,7 +491,7 @@ Object.assign(STORY, {
 },
 
 'ch6_shout': {
-  bg: 'bg-noon',
+  bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'narration', text: '你站在门槛上，转过身，对着天井喊了一声：' },
     { type: 'dialogue', speaker: '你', text: '阿琴姐！' },
@@ -504,7 +504,7 @@ Object.assign(STORY, {
 },
 
 'ch6_tell': {
-  bg: 'bg-noon',
+  bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '阿舅。里面那个人……她不愿意。' },
     { type: 'narration', text: '阿舅的脸色变了。他看着你，很久。' },
@@ -521,7 +521,7 @@ Object.assign(STORY, {
 Object.assign(STORY, {
 
 'ch7_years': {
-  scene: '第七章 \u00b7 十二年后', location: '', bg: 'bg-car',
+  scene: '第七章 \u00b7 十二年后', location: '', bg: 'bg-car', img: 'img_car.png',
   lines: [
     { type: 'divider', text: '十 二 年 后' },
     { type: 'narration', text: '你二十六岁了。在城里工作。' },
@@ -534,7 +534,7 @@ Object.assign(STORY, {
 },
 
 'ch7_return': {
-  location: '老厝 \u00b7 雨天', bg: 'bg-rain',
+  location: '老厝 \u00b7 雨天', bg: 'bg-rain', img: 'img_rain.png',
   lines: [
     { type: 'narration', text: '又是落雨天。你走过那条长巷。' },
     { type: 'narration', text: '比记忆中窄。比记忆中短。' },
@@ -551,7 +551,7 @@ Object.assign(STORY, {
 },
 
 'ch7_room': {
-  bg: 'bg-memory',
+  bg: 'bg-memory', img: 'img_rain.png',
   lines: [
     { type: 'narration', text: '你第一次走进这间房。比想象中更小。' },
     { type: 'narration', text: '窗户果然是钉死的——窗框上还留着钉子的锈痕。' },
@@ -565,7 +565,7 @@ Object.assign(STORY, {
 },
 
 'ch7_mom': {
-  bg: 'bg-memory', location: '正屋',
+  bg: 'bg-memory', img: 'img_rain.png', location: '正屋',
   lines: [
     { type: 'dialogue', speaker: '你', text: '阿母。阿琴姐呢？' },
     { type: 'dialogue', speaker: '阿母', text: '你还记得她？' },
@@ -580,7 +580,7 @@ Object.assign(STORY, {
 },
 
 'ch7_willing': {
-  bg: 'bg-memory',
+  bg: 'bg-memory', img: 'img_rain.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '她是自己愿意嫁的吗？' },
     { type: 'dialogue', speaker: '阿母', text: '关了三年……谁都会点头的。' },
@@ -591,7 +591,7 @@ Object.assign(STORY, {
 },
 
 'ch8_car': {
-  scene: '第八章 \u00b7 回程', location: '车上 \u00b7 傍晚', bg: 'bg-car',
+  scene: '第八章 \u00b7 回程', location: '车上 \u00b7 傍晚', bg: 'bg-car', img: 'img_car.png',
   lines: [
     { type: 'narration', text: '回程的车上。窗外的田野在倒退。天快黑了。' },
     { type: 'narration', text: '你从口袋里拿出那封信。十二年了。信封已经泛黄。' }
@@ -604,7 +604,7 @@ Object.assign(STORY, {
 },
 
 'ch8_open': {
-  bg: 'bg-letter',
+  bg: 'bg-letter', img: 'img_letter.png',
   lines: [
     { type: 'narration', text: '你拆开了信封。纸已经发脆了。' },
     { type: 'narration', text: '上面只有一行字。她的字很工整。每一笔都用了全部的力气。' },
@@ -619,7 +619,7 @@ Object.assign(STORY, {
 },
 
 'ch8_tell': {
-  bg: 'bg-car',
+  bg: 'bg-car', img: 'img_car.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '阿母。我那年走的时候，跟阿舅讲了一句话。' },
     { type: 'dialogue', speaker: '你', text: '我讲——里面那个人，她不愿意。' },
@@ -632,7 +632,7 @@ Object.assign(STORY, {
 },
 
 'ending_speak': {
-  scene: '尾声', location: '', bg: 'bg-ending',
+  scene: '尾声', location: '', bg: 'bg-ending', img: 'img_ending.png',
   lines: [
     { type: 'divider', text: '\u00b7 \u00b7 \u00b7' },
     { type: 'narration', text: '后来你把这件事写在了网上。没有用真名。没有写地址。' },
@@ -653,7 +653,7 @@ Object.assign(STORY, {
 },
 
 'ending_keep': {
-  scene: '尾声', location: '', bg: 'bg-ending',
+  scene: '尾声', location: '', bg: 'bg-ending', img: 'img_ending.png',
   lines: [
     { type: 'divider', text: '\u00b7 \u00b7 \u00b7' },
     { type: 'narration', text: '你把那封信放回口袋。没有打开。' },
@@ -669,7 +669,7 @@ Object.assign(STORY, {
 },
 
 'ending_alone': {
-  scene: '尾声', location: '', bg: 'bg-ending',
+  scene: '尾声', location: '', bg: 'bg-ending', img: 'img_ending.png',
   lines: [
     { type: 'divider', text: '\u00b7 \u00b7 \u00b7' },
     { type: 'narration', text: '你把信折好。放回口袋。' },

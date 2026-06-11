@@ -10,6 +10,8 @@
 *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
 html,body{height:100%;overflow:hidden;background:#111;color:#e0d6c8;font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",serif;-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
 #bgLayer{position:fixed;top:0;left:0;right:0;bottom:0;z-index:0;transition:background 1.8s ease}
+#bgImg{position:fixed;top:0;left:0;right:0;bottom:0;z-index:0;background-size:cover;background-position:center;opacity:0;transition:opacity 2s ease;pointer-events:none}
+#bgImg.show{opacity:0.18}
 .bg-rain{background:linear-gradient(180deg,#0d1117,#1a2332 40%,#2a3040 70%,#1a1a2e)}
 .bg-dusk{background:linear-gradient(180deg,#1a1520,#2d1f2f 30%,#3d2a3a 60%,#1a1520)}
 .bg-noon{background:linear-gradient(180deg,#2a2520,#3d352a 35%,#4a3f30 60%,#2a2520)}
@@ -55,6 +57,7 @@ html,body{height:100%;overflow:hidden;background:#111;color:#e0d6c8;font-family:
 </head>
 <body>
 <div id="bgLayer" class="bg-night"></div>
+<div id="bgImg"></div>
 <div id="app">
   <div class="scene-header hidden" id="sceneHeader">
     <div class="scene-title" id="sceneTitle"></div>
@@ -765,6 +768,7 @@ class Game {
     this.timers = [];
     this.flags = {};
     this.$bg = document.getElementById('bgLayer');
+    this.$bgImg = document.getElementById('bgImg');
     this.$header = document.getElementById('sceneHeader');
     this.$title = document.getElementById('sceneTitle');
     this.$location = document.getElementById('sceneLocation');
@@ -800,6 +804,8 @@ class Game {
     this.$choices.classList.add('hidden');
     this.$tapHint.classList.add('hidden');
     if (node.bg) this.$bg.className = node.bg;
+    if (node.img) { this.$bgImg.style.backgroundImage = 'url(' + node.img + ')'; this.$bgImg.classList.add('show'); }
+    else { this.$bgImg.classList.remove('show'); }
     if (node.scene) {
       this.$title.textContent = node.scene;
       this.$location.textContent = node.location || '';
