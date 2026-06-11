@@ -19,8 +19,8 @@ var STORY = {
   scene: '第一章 \u00b7 到厝', location: '潮汕某镇 \u00b7 雨天 \u00b7 下午', bg: 'bg-rain', img: 'img_rain.png',
   lines: [
     { type: 'narration', text: '那年你十四岁。暑假。' },
-    { type: 'narration', text: '阿母讲，伲去乡下阿舅恁兜蹛几日。' },
-    { type: 'narration', text: '客车行了三个钟头。下车时候，雨落甲大。' },
+    { type: 'narration', text: '阿母讲，你去乡下阿舅那里住几天。' },
+    { type: 'narration', text: '客车行了三个钟头。下车时候，雨下得很大。' },
     { type: 'narration', text: '阿舅撑伞来接你。巷子窄窄，两片壁生青苔。' },
     { type: 'narration', text: '地上的红砖被雨水洗得发亮。' },
     { type: 'narration', text: '尽头是一座老厝——' },
@@ -37,7 +37,7 @@ var STORY = {
   bg: 'bg-rain', img: 'img_rain.png',
   lines: [
     { type: 'dialogue', speaker: '你', text: '阿舅，这是啥人的厝？' },
-    { type: 'dialogue', speaker: '阿舅', text: '恁阿嬷以前蹛的所在。伊过身了后，就空着。' },
+    { type: 'dialogue', speaker: '阿舅', text: '你阿嬷以前住的地方。她走了之后，就空着。' },
     { type: 'narration', text: '他讲\u201c空着\u201d的时候，眼神闪了一下。' },
     { type: 'narration', text: '你没有追问。' }
   ],
@@ -52,7 +52,7 @@ var STORY = {
     { type: 'narration', text: '天井正对三间房。中间是大厅，供着神龛。' },
     { type: 'narration', text: '左边那间——门是关着的。门板很旧，上面贴着一张红色的符纸。' },
     { type: 'narration', text: '符纸的边角已经翘起来了。' },
-    { type: 'dialogue', speaker: '阿舅', text: '你蹛右片恁间。莫去那片。' },
+    { type: 'dialogue', speaker: '阿舅', text: '你住右边那间。不要去那边。' },
     { type: 'narration', text: '他指了指左边那扇门。' },
     { type: 'narration', text: '你注意到他没有说\u201c那间房\u201d，说的是\u201c那片\u201d。' }
   ],
@@ -65,10 +65,10 @@ var STORY = {
 'ch1_ask_why': {
   bg: 'bg-rain', img: 'img_rain.png',
   lines: [
-    { type: 'dialogue', speaker: '你', text: '做呢唔去得？' },
+    { type: 'dialogue', speaker: '你', text: '为什么不能去？' },
     { type: 'narration', text: '阿舅看了你一眼。' },
-    { type: 'dialogue', speaker: '阿舅', text: '歹物。细仔人莫管。' },
-    { type: 'narration', text: '你不知道\u201c歹物\u201d是什么意思。鬼？还是别的？' },
+    { type: 'dialogue', speaker: '阿舅', text: '不干净。小孩子不要管。' },
+    { type: 'narration', text: '你不知道\u201c歹物\u201d是什么意思。不干净的东西？还是别的？' },
     { type: 'narration', text: '他已经转身进了大厅。' }
   ],
   choices: [{ label: '去自己房间', next: 'ch1_room' }]
@@ -207,11 +207,11 @@ Object.assign(STORY, {
     { type: 'dialogue', speaker: '你', text: '……我听到了。' },
     { type: 'narration', text: '门里面安静了一会儿。然后你听见脚步声。很轻。' },
     { type: 'narration', text: '有人走到门的另一边，也蹲下来了。' },
-    { type: 'dialogue', speaker: '她', text: '你是昨日来的那个细仔？' },
+    { type: 'dialogue', speaker: '她', text: '你是昨天来的那个小孩？' },
     { type: 'dialogue', speaker: '你', text: '嗯。我是阿舅的外甥。' },
     { type: 'dialogue', speaker: '她', text: '……你几岁？' },
     { type: 'dialogue', speaker: '你', text: '十四。' },
-    { type: 'dialogue', speaker: '她', text: '恁细……' }
+    { type: 'dialogue', speaker: '她', text: '这么小……' }
   ],
   choices: [
     { label: '你是谁？', next: 'ch2_who' },
@@ -222,11 +222,11 @@ Object.assign(STORY, {
 'ch2_who': {
   bg: 'bg-dawn', img: 'img_dawn.png',
   lines: [
-    { type: 'dialogue', speaker: '你', text: '你是啥人？' },
+    { type: 'dialogue', speaker: '你', text: '你是谁？' },
     { type: 'dialogue', speaker: '她', text: '我是……你表姐。' },
     { type: 'narration', text: '她说这两个字的时候很犹豫。' },
     { type: 'dialogue', speaker: '你', text: '我不知道我有表姐。' },
-    { type: 'dialogue', speaker: '她', text: '恁家的人不会讲起我的。' }
+    { type: 'dialogue', speaker: '她', text: '你们家的人不会提起我的。' }
   ],
   choices: [{ label: '继续', next: 'ch2_breakfast' }]
 },
@@ -234,7 +234,7 @@ Object.assign(STORY, {
 'ch2_why_locked': {
   bg: 'bg-dawn', img: 'img_dawn.png',
   lines: [
-    { type: 'dialogue', speaker: '你', text: '你做呢被关在里面？' },
+    { type: 'dialogue', speaker: '你', text: '你为什么被关在里面？' },
     { type: 'dialogue', speaker: '她', text: '……因为我不愿意。' },
     { type: 'dialogue', speaker: '你', text: '不愿意什么？' },
     { type: 'dialogue', speaker: '她', text: '不愿意嫁。' },
@@ -246,8 +246,8 @@ Object.assign(STORY, {
 'ch2_breakfast': {
   bg: 'bg-noon', img: 'img_threshold.png', location: '大厅 \u00b7 早饭',
   lines: [
-    { type: 'narration', text: '吃早饭的时候，阿妗端了一个托盘出去。' },
-    { type: 'narration', text: '上面是一碗白糜、一碟菜脯。' },
+    { type: 'narration', text: '吃早饭的时候，舅妈端了一个托盘出去。' },
+    { type: 'narration', text: '上面是一碗白粥、一碟菜脯。' },
     { type: 'narration', text: '她走向左边那扇门，蹲下来，把托盘从门下面的缝隙塞进去。' },
     { type: 'narration', text: '缝隙很窄。刚好够一个碗通过。' },
     { type: 'narration', text: '阿舅假装看不见。你也假装看不见。' },
@@ -266,9 +266,9 @@ Object.assign(STORY, {
     { type: 'narration', text: '街边有卖粿条、蚝烙、草粿的摊子。' },
     { type: 'narration', text: '你买了一碗草粿。老板娘用铜勺刮出黑色的凉粉，浇上红糖水。' },
     { type: 'narration', text: '坐在骑楼下吃的时候，你听见旁边两个阿姆在讲话。' },
-    { type: 'dialogue', speaker: '阿姆甲', text: '许厝恁个查某囝，还关着呢？' },
+    { type: 'dialogue', speaker: '阿姆甲', text: '许家那个女孩，还关着呢？' },
     { type: 'dialogue', speaker: '阿姆乙', text: '是啊。都几年了。听讲是疯了。' },
-    { type: 'dialogue', speaker: '阿姆甲', text: '做呢会疯？' },
+    { type: 'dialogue', speaker: '阿姆甲', text: '怎么会疯？' },
     { type: 'dialogue', speaker: '阿姆乙', text: '不嫁就是疯嘛。她家讲的。' },
     { type: 'narration', text: '你端着碗的手停住了。' },
     { type: 'narration', text: '许厝——那不就是阿舅的姓？' }
@@ -284,10 +284,10 @@ Object.assign(STORY, {
   lines: [
     { type: 'dialogue', speaker: '阿姆甲', text: '是许厝和陈厝讲好的亲事？' },
     { type: 'dialogue', speaker: '阿姆乙', text: '是啊。彩礼都收了。' },
-    { type: 'dialogue', speaker: '阿姆甲', text: '恁她不嫁？' },
+    { type: 'dialogue', speaker: '阿姆甲', text: '她就是不嫁？' },
     { type: 'dialogue', speaker: '阿姆乙', text: '不嫁。死都不嫁。讲要读书。' },
-    { type: 'dialogue', speaker: '阿姆甲', text: '查某囝读什么书……' },
-    { type: 'dialogue', speaker: '阿姆乙', text: '就是讲。恁家就把她关起来了。等她想通。' },
+    { type: 'dialogue', speaker: '阿姆甲', text: '女孩子读什么书……' },
+    { type: 'dialogue', speaker: '阿姆乙', text: '就是讲。家里就把她关起来了。等她想通。' },
     { type: 'dialogue', speaker: '阿姆甲', text: '几年了？' },
     { type: 'dialogue', speaker: '阿姆乙', text: '三年了吧。' },
     { type: 'narration', text: '三年。你碗里的草粿已经不甜了。' }
@@ -314,7 +314,7 @@ Object.assign(STORY, {
   bg: 'bg-noon', img: 'img_threshold.png',
   lines: [
     { type: 'narration', text: '你说头晕，留在厝里。' },
-    { type: 'narration', text: '阿舅出门了。阿妗在厨房。' },
+    { type: 'narration', text: '阿舅出门了。舅妈在厨房。' },
     { type: 'narration', text: '你一个人坐在天井的石阶上。等了很久。' },
     { type: 'narration', text: '终于，门缝下面又塞出来一张纸条。' },
     { type: 'quote', text: '你还在吗？' },
@@ -508,9 +508,9 @@ Object.assign(STORY, {
   lines: [
     { type: 'dialogue', speaker: '你', text: '阿舅。里面那个人……她不愿意。' },
     { type: 'narration', text: '阿舅的脸色变了。他看着你，很久。' },
-    { type: 'dialogue', speaker: '阿舅', text: '细仔人不要讲有的没的。走。' },
+    { type: 'dialogue', speaker: '阿舅', text: '小孩子别乱说。走。' },
     { type: 'narration', text: '他的声音有点发抖。他拽着你走出了巷子。' },
-    { type: 'narration', text: '你回头看——阿妗站在门口，看着你们。她没有关门。' }
+    { type: 'narration', text: '你回头看——舅妈站在门口，看着你们。她没有关门。' }
   ],
   choices: [{ label: '继续', next: 'ch7_years', flag: 'told_uncle' }]
 }
@@ -527,7 +527,7 @@ Object.assign(STORY, {
     { type: 'narration', text: '你二十六岁了。在城里工作。' },
     { type: 'narration', text: '那封信一直在你的抽屉里。你从来没有打开过。' },
     { type: 'narration', text: '有一天，阿母打电话来：' },
-    { type: 'dialogue', speaker: '阿母', text: '你阿舅走了。后事在老家办。你转来一趟。' },
+    { type: 'dialogue', speaker: '阿母', text: '你舅舅走了。后事在老家办。你回来一趟。' },
     { type: 'narration', text: '你坐了三个钟头的车。回到了那个镇上。' }
   ],
   choices: [{ label: '继续', next: 'ch7_return' }]
